@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "10k-websites": {
+      "source": "../../../tmp/claude-0/-home-user-site-web/85d9753d-64bf-5e8a-9719-61cea17cb31c/scratchpad/10k-zip/10k-websites",
+      "sourceType": "local",
+      "computedHash": "05857666af46573597eb2fb9231c0648d4fb7d1c3e4580b8ddf94ea6d5e1d488"
+    },
     "brandkit": {
       "source": "Leonxlnx/taste-skill",
       "sourceType": "github",
