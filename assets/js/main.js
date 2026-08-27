@@ -27,9 +27,11 @@ function initHeroCorridor() {
     { src: "assets/img/team-jardinage-entretien.jpg" },
     { gradient: "linear-gradient(155deg, #2b2822, #131210 40%, #e2570a 140%)" },
     { src: "assets/img/team-nettoyage-fin-chantier.jpg" },
+    { src: "assets/img/team-bricolage-montage.jpg" },
+    { src: "assets/img/team-jardinage-amenagement.jpg" },
   ];
 
-  window.initImageCorridor(el, { images: TILES, cards: 9, speed: 20, axis: 55 });
+  window.initImageCorridor(el, { images: TILES, cards: 11, speed: 22, axis: 55 });
 }
 
 /* ---------------------------- Mobile nav ---------------------------- */
