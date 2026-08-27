@@ -6,7 +6,32 @@ document.addEventListener("DOMContentLoaded", function () {
   initScrollReveal();
   initFaq();
   initQuoteForm();
+  initHeroCorridor();
 });
+
+/* ---------------------------- Hero image corridor ---------------------------- */
+
+function initHeroCorridor() {
+  var el = document.querySelector("[data-corridor]");
+  if (!el || typeof window.initImageCorridor !== "function") return;
+
+  // Brand-coloured tiles (ink / paper / orange) instead of stock photography:
+  // there are no real team photos yet. Swap any entry's `gradient` for
+  // `src: "path/to/photo.jpg"` once real photos are available.
+  var TILES = [
+    { gradient: "linear-gradient(135deg, #131210, #3a2c1f 60%, #ff6a13)" },
+    { gradient: "linear-gradient(160deg, #ff6a13, #e2570a 70%, #131210)" },
+    { gradient: "linear-gradient(120deg, #faf9f5, #f1eee6 50%, #d9d4c7)" },
+    { gradient: "linear-gradient(145deg, #131210, #2b2822 60%, #6b665c)" },
+    { gradient: "radial-gradient(circle at 30% 20%, #ff6a13, #131210 70%)" },
+    { gradient: "linear-gradient(200deg, #e2570a, #131210)" },
+    { gradient: "linear-gradient(110deg, #fff0e2, #ff6a13 80%)" },
+    { gradient: "linear-gradient(155deg, #2b2822, #131210 40%, #e2570a 140%)" },
+    { gradient: "radial-gradient(circle at 70% 80%, #fff0e2, #d9d4c7 60%, #131210 130%)" },
+  ];
+
+  window.initImageCorridor(el, { images: TILES, cards: 9, speed: 20, axis: 55 });
+}
 
 /* ---------------------------- Mobile nav ---------------------------- */
 

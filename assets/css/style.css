@@ -688,6 +688,83 @@ p {
   }
 }
 
+/* ---------------------------- Image corridor ---------------------------- */
+
+.corridor-plane {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.corridor-stage {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.corridor-card {
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.corridor-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------- Corridor hero ---------------------------- */
+
+.hero--corridor {
+  position: relative;
+  overflow: hidden;
+  min-height: min(760px, 94vh);
+  display: flex;
+  align-items: center;
+  padding-block: 0;
+  background: var(--ink);
+}
+
+.corridor {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 50% 45%, rgba(19, 18, 16, 0.35), rgba(19, 18, 16, 0.82) 75%),
+    linear-gradient(180deg, rgba(19, 18, 16, 0.5), rgba(19, 18, 16, 0.75) 70%, rgba(19, 18, 16, 0.92));
+  pointer-events: none;
+}
+
+.hero-corridor-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 720px;
+}
+
+.hero-corridor-content .hero-tags,
+.hero-corridor-content .hero-actions {
+  justify-content: center;
+}
+
+.hero-corridor-content h1 {
+  color: var(--white);
+}
+
+.hero-corridor-content h1 em {
+  color: var(--orange);
+}
+
+.hero-corridor-content .hero-sub {
+  color: rgba(255, 255, 255, 0.72);
+  margin-inline: auto;
+}
+
 /* ------------------------- Logo strip / trust ------------------------- */
 
 .trust-strip {
