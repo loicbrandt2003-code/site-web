@@ -15,19 +15,18 @@ function initHeroCorridor() {
   var el = document.querySelector("[data-corridor]");
   if (!el || typeof window.initImageCorridor !== "function") return;
 
-  // Brand-coloured tiles (ink / paper / orange) instead of stock photography:
-  // there are no real team photos yet. Swap any entry's `gradient` for
-  // `src: "path/to/photo.jpg"` once real photos are available.
+  // Real team photos alternated with brand-coloured tiles, so the corridor
+  // reads as photography grounded in the brand rather than a wall of photos.
   var TILES = [
-    { gradient: "linear-gradient(135deg, #131210, #3a2c1f 60%, #ff6a13)" },
+    { src: "assets/img/team-nettoyage-bureaux.jpg" },
     { gradient: "linear-gradient(160deg, #ff6a13, #e2570a 70%, #131210)" },
-    { gradient: "linear-gradient(120deg, #faf9f5, #f1eee6 50%, #d9d4c7)" },
+    { src: "assets/img/team-bricolage-petits-travaux.jpg" },
     { gradient: "linear-gradient(145deg, #131210, #2b2822 60%, #6b665c)" },
-    { gradient: "radial-gradient(circle at 30% 20%, #ff6a13, #131210 70%)" },
+    { src: "assets/img/team-nettoyage-copropriete.jpg" },
     { gradient: "linear-gradient(200deg, #e2570a, #131210)" },
-    { gradient: "linear-gradient(110deg, #fff0e2, #ff6a13 80%)" },
+    { src: "assets/img/team-jardinage-entretien.jpg" },
     { gradient: "linear-gradient(155deg, #2b2822, #131210 40%, #e2570a 140%)" },
-    { gradient: "radial-gradient(circle at 70% 80%, #fff0e2, #d9d4c7 60%, #131210 130%)" },
+    { src: "assets/img/team-nettoyage-fin-chantier.jpg" },
   ];
 
   window.initImageCorridor(el, { images: TILES, cards: 9, speed: 20, axis: 55 });
