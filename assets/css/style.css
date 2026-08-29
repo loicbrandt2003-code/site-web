@@ -734,8 +734,8 @@ p {
 .hero-scrim {
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 60% at 50% 45%, rgba(19, 18, 16, 0.35), rgba(19, 18, 16, 0.82) 75%),
-    linear-gradient(180deg, rgba(19, 18, 16, 0.5), rgba(19, 18, 16, 0.75) 70%, rgba(19, 18, 16, 0.92));
+  background: radial-gradient(60% 60% at 50% 45%, rgba(19, 18, 16, 0.16), rgba(19, 18, 16, 0.5) 75%),
+    linear-gradient(180deg, rgba(19, 18, 16, 0.26), rgba(19, 18, 16, 0.42) 70%, rgba(19, 18, 16, 0.6));
   pointer-events: none;
 }
 
