@@ -734,8 +734,8 @@ p {
 .hero-scrim {
   position: absolute;
   inset: 0;
-  background: radial-gradient(60% 60% at 50% 45%, rgba(19, 18, 16, 0.08), rgba(19, 18, 16, 0.28) 75%),
-    linear-gradient(180deg, rgba(19, 18, 16, 0.14), rgba(19, 18, 16, 0.24) 70%, rgba(19, 18, 16, 0.36));
+  background: radial-gradient(60% 60% at 50% 45%, rgba(19, 18, 16, 0.04), rgba(19, 18, 16, 0.14) 75%),
+    linear-gradient(180deg, rgba(19, 18, 16, 0.07), rgba(19, 18, 16, 0.12) 70%, rgba(19, 18, 16, 0.18));
   pointer-events: none;
 }
 
@@ -754,7 +754,7 @@ p {
 
 .hero-corridor-content h1 {
   color: var(--white);
-  text-shadow: 0 2px 20px rgba(19, 18, 16, 0.5);
+  text-shadow: 0 1px 3px rgba(19, 18, 16, 0.85), 0 4px 26px rgba(19, 18, 16, 0.7);
 }
 
 .hero-corridor-content h1 em {
@@ -762,9 +762,9 @@ p {
 }
 
 .hero-corridor-content .hero-sub {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.94);
   margin-inline: auto;
-  text-shadow: 0 1px 12px rgba(19, 18, 16, 0.55);
+  text-shadow: 0 1px 3px rgba(19, 18, 16, 0.85), 0 3px 18px rgba(19, 18, 16, 0.75);
 }
 
 /* ------------------------- Logo strip / trust ------------------------- */
